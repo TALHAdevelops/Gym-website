@@ -276,145 +276,172 @@ justify-content: space-between;
   height: 300px;
   margin: 30px;
 }
+/* Existing styles remain unchanged */
+
+/* Tablet view (screens 768px and smaller) */
 @media (max-width: 768px) {
-  body {
-      font-size: 16px;
-      padding: 0 15px;
-  }
-  
-  /* Header / Navbar Adjustments */
-  nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
-  }
-  
-  .logo {
-      font-size: 24px;
-      margin-bottom: 10px;
+
+
+  .main {
+    height: auto;
+    padding: 20px;
   }
 
-  /* Stack navigation links vertically */
-  .nav-links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-  }
-  
-  /* Hero Section */
-  .hero {
-      padding: 20px 10px;
-      text-align: center;
-  }
-  
-  .hero h1 {
-      font-size: 28px;
-  }
-  
-  .hero p {
-      font-size: 18px;
+  .mainheading {
+    font-size: x-large;
+    padding-left: 0;
+    text-align: center;
   }
 
-  /* About Section */
+  .maintop {
+    padding-top: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hook {
+    padding-left: 0;
+    text-align: center;
+  }
+
   .about {
-      display: block;
-      padding: 20px 10px;
-  }
-  
-  .about .content {
-      margin-bottom: 15px;
-      font-size: 18px;
+    height: auto;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Services Section */
-  .services {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 20px 0;
-  }
-  
-  /* Footer */
-  .footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 20px;
+  .aboutpara {
+    width: 100%;
+    text-align: center;
   }
 
-  .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+  .aboutimg {
+    margin-left: 0;
+    margin-top: 20px;
   }
 
-  /* Button Styling */
-  .button {
-      padding: 10px 15px;
-      font-size: 16px;
+  .ser {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serimg {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
 /* Mobile view (screens 480px and smaller) */
-@media (max-width: 480px) {
-  body {
-      font-size: 14px;
-      padding: 0 10px;
-  }
-  
-  /* Header / Navbar Adjustments */
-  .navbar {
-      padding: 10px 0;
-  }
-  
-  .logo{
-      font-size: 22px;
-  }
-  
-  /* Stack navigation links */
-  .navigation{
-      display: none;
-  }
-  
-  /* Hero Section */
-  .hero h1 {
-      font-size: 24px;
-  }
-  
-  .hero p {
-      font-size: 16px;
+/* Hide the main navigation on smaller screens */
+/* Keep your existing styles up to the media queries */
+
+/* Tablet view (screens 768px and smaller) */
+/* Base styles for smaller screens */
+@media (max-width: 768px) {
+  /* Hide the main navigation */
+  .navigation {
+    display: none;
   }
 
-  /* About Section */
-  .about {
-      font-size: 16px;
+  /* Menu icon for mobile */
+  .menu-icon {
+    color: #ffffff;
+    display: block;
+    z-index: 50;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 7%;
+    transform: translateY(-50%);
   }
 
-  /* Services Section */
-  .services {
-      grid-template-columns: 1fr;
-      gap: 15px;
+  /* Menu icon colors */
+  .icon-menu {
+    color: red;
   }
 
-  /* Footer */
-  .footer {
-      font-size: 13px;
+  .icon-close {
+    color: red;
   }
 
-  .footer-links {
-      gap: 8px;
+  /* Hide "Join Now" button on smaller screens */
+  .mainbutton {
+    display: none;
   }
 
-  /* Buttons */
-  .button {
-      font-size: 14px;
-      padding: 8px 12px;
+  /* Mobile Navigation Menu Styling */
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 60%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    z-index: 40;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Show mobile navigation when active */
+  .mobile-nav.active {
+    display: block;
+    transform: translateY(0);
+  }
+
+  /* Mobile navigation list styling */
+  .mobile-navigation {
+    list-style: none;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  /* Mobile navigation list items */
+  .mobile-navigation li {
+    padding: 20px 0;
+  }
+
+  .mobile-navigation li:hover {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* Align the heading (logo) to the left */
+  .logo2 {
+    text-align: left;
+    padding-left: 20px;
+     height: auto;
+    width: auto;
+    border-radius: 30px;
+
+    transition: 0.5s ease-in-out;
+    font-style: italic;
+    cursor: pointer;
+   color: #ffffff;
+  }
+  .logo2:hover{
+    width: 200px;
+    border: 3px solid red;
+    transform: scale(1.1);
+  }
+  }
+
+
+/* Ensure navigation is visible on larger screens */
+@media (min-width: 769px) {
+  .navigation {
+    display: flex;
+  }
+
+  .menu-icon,
+  .mobile-nav {
+    display: none;
   }
 }
 
-/* Utility Styles */
-img, video {
-  max-width: 100%;
-  height: auto;
-}
