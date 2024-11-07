@@ -320,17 +320,25 @@ justify-content: space-between;
     margin-left: 0;
     margin-top: 20px;
   }
-
+.services{
+  height: 1100px;
+}
   .ser {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
+    height: auto; /* Allows each service to grow with content */
+  margin: 30px 0; /* Adds top and bottom margin for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   }
 
   .serimg {
     width: 100%;
     max-width: 400px;
   }
+}
+.footer{
+  height: auto;
 }
 .footitem {
   flex-direction: column;
