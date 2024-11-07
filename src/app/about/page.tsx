@@ -9,7 +9,7 @@ export default function page() {
         <Navbar/>
         <div className="about">
          <div> <h1 className="aboutheading">About Us</h1>
-          <p className="aboutpara">At FitWithTalha, we believe in empowering our community to lead healthier, stronger lives. Our gym is equipped with top-of-the-line machines, free weights, and functional training areas to suit all fitness levels. Whether you're a beginner or a seasoned athlete, our experienced trainers are here to guide and motivate you every step of the way. From high-energy group classes to personalized training programs, we provide a supportive and motivating environment designed to help you achieve your goals. Join us and be a part of a fitness community that prioritizes growth, resilience, and well-being.
+          <p className="aboutpara">At FitWithTalha, we believe in empowering our community to lead healthier, stronger lives. Our gym is equipped with top-of-the-line machines, free weights, and functional training areas to suit all fitness levels. Whether you&apos;re a beginner or a seasoned athlete, our experienced trainers are here to guide and motivate you every step of the way. From high-energy group classes to personalized training programs, we provide a supportive and motivating environment designed to help you achieve your goals. Join us and be a part of a fitness community that prioritizes growth, resilience, and well-being.
             <br />
             <br />
           For Further Details:

@@ -22,7 +22,7 @@ export default function page() {
         <div className="ser">
           <div className="ser2content">
           <h3 className="serheading">Professional Trainers</h3>
-          <p className="serpara">Our team of certified, experienced trainers is dedicated to helping you reach your fitness goals. Whether you're a beginner or an advanced athlete, our trainers provide personalized guidance, motivation, and support every step of the way. With expertise in various training techniques, they’re here to ensure safe, effective workouts tailored to your needs.</p>
+          <p className="serpara">Our team of certified, experienced trainers is dedicated to helping you reach your fitness goals. Whether you&apos;re a beginner or an advanced athlete, our trainers provide personalized guidance, motivation, and support every step of the way. With expertise in various training techniques, they&apos;re here to ensure safe, effective workouts tailored to your needs.</p>
           </div>
           <div >
           <Image src={trainer} alt="" className="serimg"></Image>
