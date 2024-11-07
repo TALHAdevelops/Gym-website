@@ -332,6 +332,18 @@ justify-content: space-between;
     max-width: 400px;
   }
 }
+.footitem {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footinfo {
+  text-align: center;
+}
+
+.footer pre {
+  font-size: 0.75rem;
+}
 
 /* Mobile view (screens 480px and smaller) */
 /* Hide the main navigation on smaller screens */
